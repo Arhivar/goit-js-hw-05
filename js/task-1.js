@@ -1,12 +1,45 @@
-function filterArray(numbers, value) {
-  numbers.forEach(function (number, index) {
-    if (number > value) {
-      console.log(`${number}`);
-    }
-  });
-}
-filterArray([1, 2, 3, 4, 5], 4);
-filterArray([1, 2, 3, 4, 5], 4);
-filterArray([1, 2, 3, 4, 5], 5);
-filterArray([12, 24, 8, 41, 76], 38);
-filterArray([12, 24, 8, 41, 76], 20);
+`use strict`;
+const getUserNames = (users) => {
+  const result = users.map((users) => users.name);
+  return result;
+};
+
+console.log(
+  getUserNames([
+    {
+      name: "Moore Hensley",
+      email: "moorehensley@indexia.com",
+      balance: 2811,
+    },
+    {
+      name: "Sharlene Bush",
+      email: "sharlenebush@tubesys.com",
+      balance: 3821,
+    },
+    {
+      name: "Ross Vazquez",
+      email: "rossvazquez@xinware.com",
+      balance: 3793,
+    },
+    {
+      name: "Elma Head",
+      email: "elmahead@omatom.com",
+      balance: 2278,
+    },
+    {
+      name: "Carey Barr",
+      email: "careybarr@nurali.com",
+      balance: 3951,
+    },
+    {
+      name: "Blackburn Dotson",
+      email: "blackburndotson@furnigeer.com",
+      balance: 1498,
+    },
+    {
+      name: "Sheree Anthony",
+      email: "shereeanthony@kog.com",
+      balance: 2764,
+    },
+  ])
+); // ["Moore Hensley", "Sharlene Bush", "Ross Vazquez", "Elma Head", "Carey Barr", "Blackburn Dotson", "Sheree Anthony"]
